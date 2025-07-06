@@ -120,4 +120,37 @@
         checkInView();
     });
 
+(function ($) {
+    "use strict";
+
+    // Ensure uniform height for group items
+    function setUniformHeight() {
+        var maxHeight = 0;
+        $('.group-item').each(function () {
+            $(this).css('height', 'auto');
+            var thisHeight = $(this).height();
+            maxHeight = Math.max(maxHeight, thisHeight);
+        });
+        $('.group-item').height(maxHeight);
+    }
+
+    $(window).on('load resize', setUniformHeight);
+
+    // Group animation on scroll
+    document.addEventListener("DOMContentLoaded", function () {
+        function checkInView() {
+            const elements = document.querySelectorAll('.animate-slide-in');
+            elements.forEach(element => {
+                const rect = element.getBoundingClientRect();
+                if (rect.top >= 0 && rect.top <= window.innerHeight * 0.9) {
+                    element.classList.add('in-view');
+                }
+            });
+        }
+        window.addEventListener('scroll', checkInView);
+        checkInView();
+    });
+
+})(jQuery);
+
 })(jQuery);

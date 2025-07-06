@@ -619,3 +619,59 @@ html, body {
     color: #ffffff;
 }
 /*** Team End ***/
+
+
+
+/*** Group Start ***/
+.group-items {
+    margin: -1rem;
+}
+
+.group-item {
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #FFFFFF;
+}
+
+.group-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.group-item:hover img {
+    transform: scale(1.1);
+}
+
+.group-item:hover .group-social {
+    bottom: 10px;
+}
+
+.group-social .btn {
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.group-item .bg-light {
+    min-height: 120px;
+    transition: background-color 0.3s ease;
+}
+
+.group-item:hover .bg-light {
+    background-color: #f8f9fa;
+}
+
+@media (max-width: 768px) {
+    .group-item .bg-light {
+        min-height: 100px;
+    }
+    .group-social .btn {
+        width: 32px;
+        height: 32px;
+    }
+}
+/*** Group End ***/
