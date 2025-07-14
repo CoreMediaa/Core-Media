@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <title>CORE MEDIA</title>
@@ -28,10 +27,9 @@
     <link href="css/style.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </head>
 
-<body>
+<body class="homepage">
     <!-- Spinner Start -->
     <div id="spinner"
         class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center">
@@ -39,405 +37,293 @@
     </div>
     <!-- Spinner End -->
 
-    <!-- Navbar Start -->
-    <div class="container-fluid fixed-top px-0">
-        <div class="container px-0">
-            <nav class="navbar navbar-light bg-custom navbar-expand-xl">
-                <a href="index.html" class="navbar-brand ms-3">
-                    <img src="img/logo_cleaned.png" alt="Logo" class="navbar-logo" style="height: 40px;">
-                    <span class="navbar-brand-text">CORE MEDIA<br><small></small></span>
-                </a>
-                <button class="navbar-toggler py-2 px-3 me-3" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars text-brown"></span>
-                </button>
-                <div class="collapse navbar-collapse bg-custom" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto">
-                        <a href="#home" class="nav-item nav-link text-brown">HOME</a>
-                        <a href="#logo" class="nav-item nav-link text-brown">LOGO</a>
-                        <a href="#color" class="nav-item nav-link text-brown">COLOR</a>
-                        <a href="#typography" class="nav-item nav-link text-brown">TYPOGRAPHY</a>
-                        <a href="#stationery" class="nav-item nav-link text-brown">STATIONERY</a>
-                        <a href="#about" class="nav-item nav-link text-brown">ABOUT US</a>
-                        <a href="contact.html" class="nav-item nav-link btn btn-outline-brown">Contact</a>
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid nav-bar p-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+                <h1 class="display-5 m-0"><span style="color: #080F59;">CORE</span> <span style="color: #FF0000;">MEDIA</span></h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar & Hero End -->
+
+    <!-- Modal Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h4 class="modal-title text-secondary mb-0" id="exampleModalLabel">Search by keyword</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <div class="input-group w-75 mx-auto d-flex">
+                        <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                        <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
                     </div>
                 </div>
-            </nav>
+            </div>
         </div>
     </div>
-    <!-- Navbar End -->
+    <!-- Modal Search End -->
 
-    <!-- First Start -->
-    <div id="home" class="container-fluid carousel-header vh-100 px-0">
-        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                    <img src="img/logo_cleaned.png" class="img-fluid" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="p-3" style="max-width: 900px;">
-                            <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;"></h4>
-                            <h1 class="display-1 text-capitalize text-white mb-4"></h1>
-                            <p class="mb-5 fs-5"></p>
+    <!-- Home Start -->
+    <div id="home" class="container-fluid donation py-5">
+        <div class="container py-5">
+            <div class="row align-items-stretch animate-slide-in">
+                <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+                    <div class="donation-item">
+                        <img src="img/logo_cleaned.png" class="img-fluid" alt="Core Media Logo">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="donation-content text-left">
+                        <h1 class="display-4 text-capitalize mb-4" data-en="The Essence">The Essence</h1>
+                        <p class="mb-4"
+                            data-en="At Core Media, we embrace minimalism in design and sophistication in experience. Our mission is to elevate your brand in the digital space with clarity and impact.">
+                            At Core Media, we embrace minimalism in design and sophistication in experience. Our mission
+                            is to elevate your brand in the digital space with clarity and impact.</p>
+                        <p class="mb-4"
+                            data-en="Our name reflects our values: creativity, functionality, and adaptability. Every project is crafted with a deep understanding of your brand and user needs, ensuring seamless communication and connection.">
+                            Our name reflects our values: creativity, functionality, and adaptability. Every project is
+                            crafted with a deep understanding of your brand and user needs, ensuring seamless
+                            communication and connection.</p>
+                        <p class="mb-0"
+                            data-en="We don’t just create visually stunning designs—we prioritize usability and precision. Each project is a collaborative journey, delivered with passion and an unwavering commitment to quality.">
+                            We don’t just create visually stunning designs—we prioritize usability and precision. Each
+                            project is a collaborative journey, delivered with passion and an unwavering commitment to
+                            quality.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Home End -->
+
+    <!-- Features Start -->
+    <div class="container-fluid features overflow-hidden py-5">
+        <div class="container">
+            <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="sub-style">
+                    <h5 class="sub-title text-primary px-3">CORE MEDIA</h5>
+                </div>
+            </div>
+            <div class="row g-4 justify-content-center text-center">
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="feature-item text-center p-4">
+                        <div class="feature-icon p-3 mb-4">
+                            <i class="fas fa-lightbulb fa-4x text-primary"></i>
+                        </div>
+                        <div class="feature-content d-flex flex-column">
+                            <h5 class="mb-3">Creativity & Innovation</h5>
+                            <p class="mb-3">Continuously updating new trends in digital media, advertising, and digital
+                                content to create.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="feature-item text-center p-4">
+                        <div class="feature-icon p-3 mb-4">
+                            <i class="fas fa-star fa-4x text-primary"></i>
+                        </div>
+                        <div class="feature-content d-flex flex-column">
+                            <h5 class="mb-3">Quality</h5>
+                            <p class="mb-3">Setting high standards for content and media products, helping brands build
+                                a professional and trustworthy image.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="feature-item text-center p-4">
+                        <div class="feature-icon p-3 mb-4">
+                            <i class="fas fa-link fa-4x text-primary"></i>
+                        </div>
+                        <div class="feature-content d-flex flex-column">
+                            <h5 class="mb-3">Connection</h5>
+                            <p class="mb-3">Acting as a bridge between businesses, consumers, and the public through
+                                powerful media platforms.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- First End -->
+    <!-- Features End -->
 
-    <!-- Logo Start -->
-    <div id="logo" class="container-fluid event py-5">
-        <div class="container py-5">
-            <div class="text-center mx-auto mb-5" style="max-width: 800px;">
-                <h1 class="text-uppercase text-primary">LOGO</h1>
-            </div>
-            <div class="event-carousel owl-carousel">
-                <!--funciton 1-->
-                <div class="event-item">
-                    <img src="img/overview-fix.png" class="img-fluid w-100"
-                        style="object-fit: contain; max-height: 300px;" alt="Image">
-                    <div class="event-content p-4">
-                        <h4 class="mb-4">OVERVIEW</h4>
-                        <p class="mb-4">Media Core’s mark is a
-                            minimalist red triangle nested
-                            within a balanced black and
-                            white wordmark—an immediate
-                            nod to the universal “play” icon,
-                            instantly signaling motion and
-                            digital media.</p>
+    <!-- About Start -->
+    <div class="container-fluid pt-6 pb-6">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="about-img">
+                        <img class="img-fluid w-100" src="img/logo_cleaned.png">
                     </div>
                 </div>
-                <!--funciton 2-->
-                <div class="event-item">
-                    <img src="img/structure-fix.png" class="img-fluid w-100"
-                        style="object-fit: contain; max-height: 300px;" alt="Image">
-                    <div class="event-content p-4">
-                        <h4 class="mb-4">STRUCTURE</h4>
-                        <p class="mb-4">The triangle sits to the left of the
-                            logotype, its apex aligned with
-                            the cap height of the letters;
-                            stroke weights and negative
-                            space follow a strict 1×1
-                            geometric grid to preserve
-                            clarity at any size.</p>
-                    </div>
-                </div>
-                <!--funciton 3-->
-                <div class="event-item">
-                    <img src="img/slogan-fix.png" class="img-fluid w-100"
-                        style="object-fit: contain; max-height: 300px;" alt="Image">
-                    <div class="event-content p-4">
-                        <h4 class="mb-4">SLOGAN</h4>
-                        <p class="mb-4">The Vietnamese tagline appears
-                            beneath the wordmark in
-                            Montserrat Medium, letter
-                            spaced +10 pt, echoing the
-                            triangle’s base width for perfect
-                            visual harmony.</p>
-                    </div>
-                </div>
-                <!--funciton 4-->
-                <div class="event-item">
-                    <img src="img/clear-space-fix.png" class="img-fluid w-100"
-                        style="object-fit: contain; max-height: 300px;" alt="Image">
-                    <div class="event-content p-4">
-                        <h4 class="mb-4">CLEAR SPACE</h4>
-                        <p class="mb-4">Reserve clearance equal to the
-                            height of the triangle on all
-                            sides; no graphic, text, or page
-                            edge may breach this zone to
-                            maintain legibility and brand
-                            impact.</p>
-                    </div>
-                </div>
-                <!--funciton 5-->
-                <div class="event-item">
-                    <img src="img/placement-lockup-fix.png" class="img-fluid w-100"
-                        style="object-fit: contain; max-height: 300px;" alt="Image">
-                    <div class="event-content p-4">
-                        <h4 class="mb-4">PLACEMENT LOCK UP</h4>
-                        <p class="mb-4">Use the horizontal lock up
-                            (triangle + wordmark + slogan)
-                            as default; vertical or centered
-                            variants are allowed only when
-                            horizontal space is constrained.</p>
-                    </div>
-                </div>
-                <!--funciton 6-->
-                <div class="event-item">
-                    <img src="img/misuses-fix-2.png" class="img-fluid w-100"
-                        style="object-fit: contain; max-height: 300px;" alt="Image">
-                    <div class="event-content p-4">
-                        <h4 class="mb-4">MISUSES</h4>
-                        <p class="mb-4">Never rotate, recolor, outline,
-                            distort, or place the logo over
-                            busy imagery; avoid gradient
-                            fills, drop shadows, or
-                            substituting the triangle with
-                            any other shape.</p>
-                    </div>
+                <div class="col-lg-8 wow fadeIn" data-wow-delay="0.5s">
+                    <h1 class="display-6 text-uppercase mb-4 text-primary" style="font-family: 'Jost', sans-serif;">CONCEPT</h1>
+                    <p class="mb-4"
+                        data-en="Developing video, image, and article content that follows trends, creating impressive marketing campaigns. Building a platform that connects users with brands through community campaigns and social networks.">
+                        Developing video, image, and article content that follows trends, creating impressive marketing
+                        campaigns. Building a platform that connects users with brands through community campaigns and
+                        social networks.</p>
+                    <p><i class="fa fa-check-square text-blue me-3"></i> <span
+                            data-en="CREATIVE CONTENT PLATFORM">CREATIVE CONTENT PLATFORM</span></p>
+                    <p><i class="fa fa-check-square text-blue me-3"></i> <span
+                            data-en="COMPREHENSIVE DIGITAL MEDIA">COMPREHENSIVE DIGITAL MEDIA</span></p>
+                    <p><i class="fa fa-check-square text-blue me-3"></i> <span
+                            data-en="MEDIA & TECHNOLOGY ECOSYSTEM">MEDIA & TECHNOLOGY ECOSYSTEM</span></p>
+                    <p><i class="fa fa-check-square text-blue me-3"></i> <span
+                            data-en="COMMUNITY-ORIENTED COMMUNICATION">COMMUNITY-ORIENTED COMMUNICATION</span></p>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Logo End -->
+    <!-- About End -->
 
-    <!-- Color Start -->
-    <div id="color" class="container-fluid service py-5 bg-light">
-        <div class="container py-5">
-            <div class="text-center mx-auto pb-5" style="max-width: 800px;">
-                <h1 class="text-uppercase text-primary">COLOR</h1>
+    <!-- Experience Start -->
+    <div class="container-fluid experience pt-6 pb-6">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h1 class="display-6 text-uppercase mb-5 text-primary" style="font-family: 'Jost', sans-serif;" data-en="Work Experience">Work Experience</h1>
             </div>
             <div class="row g-4">
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-item">
-                        <img src="img/negative-positive.png" class="img-fluid w-100" alt="Image">
+                <div class="col-lg-4 col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="experience-item">
+                        <div class="experience-inner pb-5">
+                            <div class="image-container">
+                                <img class="img-fluid" src="img/work-1.png" alt="">
+                            </div>
+                            <div class="experience-text px-5 pt-4">
+                                <h5 class="text-uppercase" data-en="Video Editor">Video Editor</h5>
+                                <p data-en="Insert content here">Insert content here</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="service-link">
-                        <a href="#" class="h4 mb-0">NEGATIVE AND POSITIVE COLOR</a>
-                    </div>
-                    <p class="my-4">Deploy the red triangle and black wordmark on white for positive usage; invert to a
-                        white logo on solid red or black backgrounds for negative applications.</p>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-item">
-                        <img src="img/color-pallete-fix-1.png" class="img-fluid w-100" alt="Image">
+                <div class="col-lg-4 col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="experience-item">
+                        <div class="experience-inner pb-5">
+                            <div class="image-container">
+                                <img class="img-fluid" src="img/work-2.png" alt="">
+                            </div>
+                            <div class="experience-text px-5 pt-4">
+                                <h5 class="text-uppercase" data-en="Photographer">Photographer</h5>
+                                <p data-en="Insert content here">Insert content here</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="service-link">
-                        <a href="#" class="h4 mb-0">COLOR PALLETE</a>
-                    </div>
-                    <p class="my-4">Media Core adopts a focused and strategic color system to ensure consistency,
-                        impact, and brand recognition across all media applications.</p>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-item">
-                        <img src="img/additional-fix.png" class="img-fluid w-100" alt="Image">
+                <div class="col-lg-4 col-md-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="experience-item">
+                        <div class="experience-inner pb-5">
+                            <div class="image-container">
+                                <img class="img-fluid" src="img/work-3.png" alt="">
+                            </div>
+                            <div class="experience-text px-5 pt-4">
+                                <h5 class="text-uppercase" data-en="Media">Media</h5>
+                                <p data-en="Insert content here">Insert content here</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="service-link">
-                        <a href="#" class="h4 mb-0">ADDITIONAL COLOR</a>
-                    </div>
-                    <p class="my-4">While Media Core maintains a minimalist core palette, select additional colors may
-                        be introduced to enhance functionality and adaptability—especially in digital and multimedia
-                        contexts.</p>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Color End -->
+    <!-- Experience End -->
 
-    <!-- TYPOGRAPHY Start -->
-    <div id="typography" class="container-fluid donation py-5">
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container py-5">
-            <div class="text-center mx-auto pb-5">
-                <h1 class="text-uppercase">TYPOGRAPHY</h1>
+            <div class="section-title text-center position-relative pb-3 mb-4 mx-auto" style="max-width: 600px;">
+                <h1 class="mb-0 text-primary" style="font-family: 'Jost', sans-serif;">WHAT OUR CUSTOMERS SAY ABOUT US</h1>
             </div>
-            <div class="row g-4">
-                <!-- Primary Font -->
-                <div class="row align-items-stretch mb-4 animate-slide-in">
-                    <div class="col-lg-6 col-md-12">
-                        <div class="donation-content text-left">
-                            <h2 class="text-uppercase mb-3">PRIMARY FONT</h2>
-                            <p class="mb-0">Used exclusively in the logo, Montserrat Medium reinforces Media Core’s
-                                bold, modern character with geometric clarity and strong presence. It is not applied to
-                                body text or other applications beyond brand identity.</p>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.6s">
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <img class="img-fluid rounded" src="img/logo_cleaned.png" style="width: 60px; height: 60px;">
+                        <div class="ps-4">
+                            <h4 class="text-primary mb-1">Sarah Johnson</h4>
+                            <small class="text-uppercase">Marketing Director</small>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-12">
-                        <div class="donation-item">
-                            <img src="img/primary-front.png" class="img-fluid" alt="Primary Font">
-                        </div>
+                    <div class="pt-4 pb-5 px-5">
+                        Your team's professionalism and dedication delivered outstanding results. The seamless process
+                        and exceptional service quality truly exceeded our expectations.
                     </div>
                 </div>
-                <!-- Secondary Font -->
-                <div class="row align-items-stretch animate-slide-in">
-                    <div class="col-lg-6 col-md-12">
-                        <div class="donation-content text-left">
-                            <h2 class="text-uppercase mb-3">SECONDARY FONT</h2>
-                            <p class="mb-0">Its rounded curves and open spacing bring a friendly, approachable feel
-                                while maintaining a sleek, contemporary look. It ensures readability in both print and
-                                digital environments, complementing the logo without overpowering it.</p>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <img class="img-fluid rounded" src="img/logo_cleaned.png" style="width: 60px; height: 60px;">
+                        <div class="ps-4">
+                            <h4 class="text-primary mb-1">Michael Chen</h4>
+                            <small class="text-uppercase">E-commerce Manager</small>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-12">
-                        <div class="donation-item">
-                            <img src="img/secondary-font.png" class="img-fluid" alt="Secondary Font">
+                    <div class="pt-4 pb-5 px-5">
+                        The services provided transformed our operations with remarkable efficiency. Your attention to
+                        detail and commitment to excellence were truly impressive.
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <img class="img-fluid rounded" src="img/logo_cleaned.png" style="width: 60px; height: 60px;">
+                        <div class="ps-4">
+                            <h4 class="text-primary mb-1">Emily Davis</h4>
+                            <small class="text-uppercase">Small Business Owner</small>
                         </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        Collaborating with your team was a transformative experience. The innovative solutions and
+                        strategic approach significantly elevated our business.
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <img class="img-fluid rounded" src="img/logo_cleaned.png" style="width: 60px; height: 60px;">
+                        <div class="ps-4">
+                            <h4 class="text-primary mb-1">David Rodriguez</h4>
+                            <small class="text-uppercase">IT Consultant</small>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        Your services provided exceptional value and reliability. The professional approach and thorough
+                        execution gave us complete confidence in the results.
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- TYPOGRAPHY End -->
+    <!-- Testimonial End -->
 
-    <!-- Stationary Start -->
-    <div id="stationery" class="container-fluid team py-5">
-        <div class="container py-5">
-            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                <h1 class="text-primary"> STATIONERY</h1>
-            </div>
-            <!-- First Row: 3 Images -->
-            <div class="row gy-5 gy-lg-4 gx-4">
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="team-item">
-                        <div class="team-img">
-                            <img src="img/bussiness-card-fix.png" class="img-fluid w-100" alt="Image">
-                        </div>
-                        <div class="team-content">
-                            <h4>BUSSINESS CARD</h4>
-                            <p class="mb-0"> Designed to make a strong first
-                                impression, the business card carries
-                                the core brand identity in a
-                                compact format. It provides
-                                essential contact information and
-                                serves as a tactile extension of
-                                Media Core’s professional presence.
-                            </p>
-                        </div>
-                    </div>
+    <!-- Copyright Start -->
+    <div id="about" class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-4 text-center text-md-start mb-md-0">
+                    <span class="text-body"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Core Media</a>,
+                        <span style="color: #FFFFFF;" data-en="All rights reserved.">All rights reserved.</span></span>
                 </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="team-item">
-                        <div class="team-img">
-                            <img src="img/id-card-fix.png" class="img-fluid w-100" alt="Image">
-                        </div>
-                        <div class="team-content">
-                            <h4>ID CARD</h4>
-                            <p class="mb-0"> Used for internal identification
-                                and access control, the ID card
-                                visually reinforces brand unity
-                                while clearly displaying
-                                employee details. It balances
-                                functionality with a bold,
-                                branded design.
-                                NGO NGOC
-                                ANH THU.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="team-item">
-                        <div class="team-img">
-                            <img src="img/file-folder-fix-1.png" class="img-fluid w-100" alt="Image">
-                        </div>
-                        <div class="team-content">
-                            <h4>FILE FOLDER</h4>
-                            <p class="mb-0"> This folder is intended for
-                                organizing and presenting
-                                documents in meetings, pitches,
-                                or client handovers. It enhances
-                                the perceived value of printed
-                                materials and maintains a
-                                polished brand appearance.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Second Row: 2 Images, Centered -->
-            <div class="row gy-5 gy-lg-4 gx-4 mt-5 justify-content-center">
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="team-item">
-                        <div class="team-img">
-                            <img src="img/envelope-fix-1.png" class="img-fluid w-100" alt="Image">
-                        </div>
-                        <div class="team-content">
-                            <h4>ENVELOPE</h4>
-                            <p class="mb-0"> Used for official
-                                correspondence, the envelope
-                                carries the Media Core brand in
-                                a clean, minimal layout. Its
-                                design ensures the recipient’s
-                                first point of contact feels
-                                intentional and professional.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="team-item">
-                        <div class="team-img">
-                            <img src="img/letterhead-fix-1.png" class="img-fluid w-100" alt="Image">
-                        </div>
-                        <div class="team-content">
-                            <h4>LETTERHEAD</h4>
-                            <p class="mb-0">As the foundation of printed
-                                communication, the letterhead
-                                ensures every message reflects
-                                the Media Core brand. From
-                                proposals to memos, it
-                                maintains visual consistency and
-                                conveys credibility.</p>
-                        </div>
-                    </div>
+                <div class="col-md-4 text-center text-md-end text-body">
+                    <span style="color: #FFFFFF;" data-en="Designed By">Designed By</span> <a class="border-bottom"
+                        href="index.html">CORE
+                        MEDIA</a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Stationary End -->
-
-<!-- Group Start -->
-<div class="container-xxl py-5">
-    <div class="container">
-        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-             <h1 class="section-title text-uppercase" style="color: #FF0000;">TEAM MEMBER</h1>
-        </div>
-        <div class="row g-4 group-items justify-content-center">
-            <div class="col-lg-3 col-md-6">
-                <div class="group-item position-relative overflow-hidden rounded shadow-sm h-100 d-flex flex-column animate-slide-in">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="img/team-member-1.png" alt="Nguyen Le Van Quyen" style="object-fit: cover; aspect-ratio: 1/1; transition: transform 0.5s ease;">
-                        <div class="group-social text-center position-absolute w-100" style="bottom: -40px; transition: bottom 0.5s ease;">
-                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                    <div class="bg-light text-center p-4 flex-grow-1 d-flex flex-column justify-content-center">
-                        <h3 class="mt-2 mb-1">Nguyen Le Van Quyen</h3>
-                        <span class="text-dark">DE160351</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="group-item position-relative overflow-hidden rounded shadow-sm h-100 d-flex flex-column animate-slide-in">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="img/team-member-2.png" alt="Ngo Ngoc Anh Thu" style="object-fit: cover; aspect-ratio: 1/1; transition: transform 0.5s ease;">
-                        <div class="group-social text-center position-absolute w-100" style="bottom: -40px; transition: bottom 0.5s ease;">
-                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                    <div class="bg-light text-center p-4 flex-grow-1 d-flex flex-column justify-content-center">
-                        <h3 class="mt-2 mb-1">Ngo Ngoc Anh Thu</h3>
-                        <span class="text-dark">DE170258</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Group End -->
-
-<!-- Copyright Start -->
-<div id="about" class="container-fluid copyright py-4">
-    <div class="container">
-        <div class="row g-4 align-items-center">
-            <div class="col-md-4 text-center text-md-start mb-md-0">
-                <span class="text-body"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Core Media</a>,
-                    <span style="color: #FFFFFF;">All right reserved.</span></span>
-            </div>
-            <div class="col-md-4 text-center text-md-end text-body">
-                <span style="color: #FFFFFF;">Designed By</span> <a class="border-bottom" href="index.html">CORE MEIDA</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Copyright End -->
+    <!-- Copyright End -->
 
     <!-- Back to Top -->
-    <a href="#home" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i
-            class="fa fa-arrow-up"></i></a>
+    <a href="#home" class="btn btn-primary btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>
 
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -451,5 +337,4 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
-
 </html>

@@ -39,53 +39,147 @@
     </div>
     <!-- Spinner End -->
 
-    <!-- Navbar Start -->
-    <div class="container-fluid fixed-top px-0">
-        <div class="container px-0">
-            <nav class="navbar navbar-light bg-custom navbar-expand-xl">
-                <a href="index.html" class="navbar-brand ms-3">
-                    <img src="img/logo_cleaned.png" alt="Logo" class="navbar-logo" style="height: 40px;">
-                    <span class="navbar-brand-text">CORE MEDIA<br><small></small></span>
-                </a>
-                <button class="navbar-toggler py-2 px-3 me-3" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars text-brown"></span>
-                </button>
-                <div class="collapse navbar-collapse bg-custom" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto">
-                        <a href="#home" class="nav-item nav-link text-brown">HOME</a>
-                        <a href="#logo" class="nav-item nav-link text-brown">LOGO</a>
-                        <a href="#color" class="nav-item nav-link text-brown">COLOR</a>
-                        <a href="#typography" class="nav-item nav-link text-brown">TYPOGRAPHY</a>
-                        <a href="#stationery" class="nav-item nav-link text-brown">STATIONERY</a>
-                        <a href="#about" class="nav-item nav-link text-brown">ABOUT US</a>
-                        <a href="contact.html" class="nav-item nav-link btn btn-outline-brown">Contact</a>
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid nav-bar p-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+                <h1 class="display-5 m-0"><span style="color: #080F59;">CORE</span> <span style="color: #FF0000;">MEDIA</span></h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar & Hero End -->
+
+<!-- Contact Start -->
+<div class="container-fluid contact overflow-hidden py-5">
+    <div class="container py-5">
+        <div class="row g-5 mb-5">
+            <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+                <div class="sub-style"></div>
+                <h1 class="display-5 mb-4 text-primary" style="font-family: 'Jost', sans-serif;">Got a Project in Mind? Let’s Talk!</h1>
+                <p class="mb-5">We’re here to bring your ideas to life. Whether you need a full digital transformation or just a fresh creative direction — our team is ready to help.</p>
+
+                <div class="d-flex border-bottom mb-4 pb-4">
+                    <i class="fas fa-map-marked-alt fa-4x text-primary bg-light p-3 rounded"></i>
+                    <div class="ps-3">
+                        <h5>Office Address</h5>
+                        <p>Core Media Studio, Da Nang, Viet Nam</p>
                     </div>
                 </div>
-            </nav>
-        </div>
-    </div>
-    <!-- Navbar End -->
 
-    <!-- First Start -->
-    <div id="home" class="container-fluid carousel-header vh-100 px-0">
-        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                    <img src="img/media-background.png" class="img-fluid" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="p-3" style="max-width: 900px;">
-                            <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;"></h4>
-                            <h1 class="display-1 text-capitalize text-white mb-4"></h1>
-                            <p class="mb-5 fs-5"></p>
+                <div class="row g-3">
+                    <div class="col-xl-6">
+                        <div class="d-flex">
+                            <i class="fas fa-tty fa-3x text-primary"></i>
+                            <div class="ps-3">
+                                <h5 class="mb-3">Contact Info</h5>
+                                <div class="mb-3">
+                                    <h6 class="mb-0">Phone:</h6>
+                                    <a href="#" class="fs-5 text-primary">(+84) 973 888 373</a>
+                                </div>
+                                <div class="mb-3">
+                                    <h6 class="mb-0">Email:</h6>
+                                    <a href="#" class="fs-5 text-primary">coremedia@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6">
+                        <div class="d-flex">
+                            <i class="fas fa-clone fa-3x text-primary"></i>
+                            <div class="ps-3">
+                                <h5 class="mb-3">Working Hours</h5>
+                                <div class="mb-3">
+                                    <h6 class="mb-0">Mon – Fri:</h6>
+                                    <a href="#" class="fs-5 text-primary">09:00 AM – 06:00 PM</a>
+                                </div>
+                                <div class="mb-3">
+                                    <h6 class="mb-0">Saturday:</h6>
+                                    <a href="#" class="fs-5 text-primary">10:00 AM – 04:00 PM</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="d-flex align-items-center pt-3">
+                    <div class="me-4">
+                        <div class="bg-light d-flex align-items-center justify-content-center" style="width: 90px; height: 90px; border-radius: 10px;">
+                            <i class="fas fa-share fa-3x text-primary"></i>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <a class="btn btn-secondary border-secondary me-2 p-0" href="">Facebook <i class="fas fa-chevron-circle-right"></i></a>
+                        <a class="btn btn-secondary border-secondary mx-2 p-0" href="">Twitter <i class="fas fa-chevron-circle-right"></i></a>
+                        <a class="btn btn-secondary border-secondary mx-2 p-0" href="">Instagram <i class="fas fa-chevron-circle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3">
+                <div class="sub-style">
+                    <h5 class="sub-title text-primary pe-3">Let’s Work Together</h5>
+                </div>
+                <h1 class="display-5 mb-4 text-primary" style="font-family: 'Jost', sans-serif;">Send Us a Message</h1>
+                <p class="mb-3">Fill out the form below to tell us more about your project or idea. We’ll get back to you as soon as possible to explore how we can work together!</p>
+                <form>
+                    <div class="row g-4">
+                        <div class="col-lg-12 col-xl-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                <label for="name">Your Name</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-xl-6">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                <label for="email">Your Email</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-xl-6">
+                            <div class="form-floating">
+                                <input type="phone" class="form-control" id="phone" placeholder="Phone">
+                                <label for="phone">Your Phone</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-xl-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="project" placeholder="Project">
+                                <label for="project">Your Project</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                <label for="subject">Subject</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 160px"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary w-100 py-3">Send Message</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-    <!-- First End -->
-
+</div>
+<!-- Contact End -->
 
 
 <!-- Copyright Start -->

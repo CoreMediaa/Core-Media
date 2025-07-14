@@ -1,3 +1,4 @@
+
 (function ($) {
     "use strict";
 
@@ -11,21 +12,14 @@
     };
     spinner(0);
 
-    // Fixed Navbar
+    // Sticky Navbar
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
-            $('.fixed-top .container').addClass('shadow-sm').css('max-width', '100%');
+        if ($(this).scrollTop() > 45) {
+            $('.nav-bar').addClass('sticky-top shadow-sm');
         } else {
-            $('.fixed-top .container').removeClass('shadow-sm').css('max-width', '85%');
+            $('.nav-bar').removeClass('sticky-top shadow-sm');
         }
     });
-
-    // Donation
-    $('.progress').waypoint(function () {
-        $('.progress-bar').each(function () {
-            $(this).css("width", $(this).attr("aria-valuenow") + '%');
-        });
-    }, { offset: '80%' });
 
     // Facts counter
     $('[data-toggle="counter-up"]').counterUp({
@@ -64,9 +58,32 @@
         }
     });
 
+    // Testimonials carousel
+    $(".testimonial-carousel").owlCarousel({
+        autoplay: true,
+        smartSpeed: 1500,
+        dots: true,
+        loop: true,
+        center: true,
+        responsive: {
+            0: { items: 1 },
+            576: { items: 1 },
+            768: { items: 2 },
+            992: { items: 3 }
+        }
+    });
+
+    // Back to top button visibility
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) {
+            $('.back-to-top').fadeIn('slow');
+        } else {
+            $('.back-to-top').fadeOut('slow');
+        }
+    });
+
     // Smooth scroll for navbar and back-to-top
     $(document).ready(function () {
-        // Preload scroll positions
         var sectionOffsets = {};
         $('.navbar .nav-link, .back-to-top').each(function () {
             var href = $(this).attr('href');
@@ -78,7 +95,6 @@
             }
         });
 
-        // Smooth scroll
         $('.navbar .nav-link, .back-to-top').click(function (e) {
             var href = $(this).attr('href');
             if (href.startsWith('#')) {
@@ -96,15 +112,6 @@
         });
     });
 
-    // Back to top button visibility
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
-            $('.back-to-top').fadeIn('slow');
-        } else {
-            $('.back-to-top').fadeOut('slow');
-        }
-    });
-
     // Animation on scroll
     document.addEventListener("DOMContentLoaded", function () {
         function checkInView() {
@@ -120,9 +127,6 @@
         checkInView();
     });
 
-(function ($) {
-    "use strict";
-
     // Ensure uniform height for group items
     function setUniformHeight() {
         var maxHeight = 0;
@@ -136,21 +140,55 @@
 
     $(window).on('load resize', setUniformHeight);
 
-    // Group animation on scroll
-    document.addEventListener("DOMContentLoaded", function () {
-        function checkInView() {
-            const elements = document.querySelectorAll('.animate-slide-in');
-            elements.forEach(element => {
-                const rect = element.getBoundingClientRect();
-                if (rect.top >= 0 && rect.top <= window.innerHeight * 0.9) {
-                    element.classList.add('in-view');
-                }
-            });
-        }
-        window.addEventListener('scroll', checkInView);
-        checkInView();
+    // Initialize WOW.js for animations
+    $(document).ready(function () {
+        new WOW().init();
     });
-
 })(jQuery);
 
+(function ($) {
+    "use strict";
+
+    // Spinner
+    var spinner = function () {
+        setTimeout(function () {
+            if ($('#spinner').length > 0) {
+                $('#spinner').removeClass('show');
+            }
+        }, 1);
+    };
+    spinner(0);
+
+    // Sticky Navbar
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 45) {
+            $('.nav-bar').addClass('sticky-top shadow-sm');
+        } else {
+            $('.nav-bar').removeClass('sticky-top shadow-sm');
+        }
+    });
+
+    // Set active navbar link based on current page
+    $(document).ready(function () {
+        var currentPage = window.location.pathname.split('/').pop();
+        $('.navbar-nav .nav-link').each(function() {
+            var linkPage = $(this).attr('href');
+            if (linkPage === currentPage) {
+                $(this).addClass('active');
+            } else {
+                $(this).removeClass('active');
+            }
+        });
+    });
+
+    // Facts counter
+    $('[data-toggle="counter-up"]').counterUp({
+        delay: 5,
+        time: 2000
+    });
+
+    // Initialize WOW.js for animations
+    if (typeof WOW !== 'undefined') {
+        new WOW().init();
+    }
 })(jQuery);
